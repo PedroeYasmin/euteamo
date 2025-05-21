@@ -80,38 +80,6 @@ body {
 }
 
 /* Carousel Navigation */
-.carousel-navigation {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 10;
-}
-
-.carousel-progress {
-    width: 60%;
-    height: 4px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.carousel-progress-bar {
-    height: 100%;
-    background-color: var(--white);
-    width: 0;
-    transition: width 0.3s ease;
-}
-
-/* Content Styles */
-.content {
-    padding: 3rem;
-    text-align: center;
-    background: linear-gradient(to bottom, var(--white), var(--gray-light));
-    border-radius: 0 0 20px 20px;
-}
 
 .counter-container {
     display: flex;
