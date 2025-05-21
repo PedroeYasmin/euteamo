@@ -34,7 +34,6 @@ class OptimizedCarousel {
     constructor() {
         this.carousel = document.querySelector('.carousel');
         this.carouselContainer = document.querySelector('.carousel-container');
-        this.progressBar = document.querySelector('.carousel-progress-bar');
         
         this.currentIndex = 0;
         this.totalImages = 0;
@@ -83,7 +82,6 @@ class OptimizedCarousel {
             }
             
             // Atualizar a barra de progresso
-            this.updateProgressBar();
         });
     }
     
@@ -140,7 +138,6 @@ class OptimizedCarousel {
             this.currentIndex = targetIndex;
             
             // Atualizar a barra de progresso
-            this.updateProgressBar();
             
             // Permitir nova transição após a atual terminar
             setTimeout(() => {
@@ -160,10 +157,6 @@ class OptimizedCarousel {
     }
     
     // Atualizar a barra de progresso
-    updateProgressBar() {
-        const progress = ((this.currentIndex + 1) / this.totalImages) * 100;
-        this.progressBar.style.width = `${progress}%`;
-    }
     
     // Configurar os event listeners
     setupEventListeners() {
